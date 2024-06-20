@@ -1,0 +1,653 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+/* Override UGG site */
+#main {
+  width: 100%;
+  padding: 0;
+}
+.content-asset p {
+  margin: 0 auto;
+}
+.breadcrumb {
+  display: none;
+}
+/* Helpers */
+/**************************/
+.margin-top-10 {
+  padding-top: 10px;
+}
+.margin-bot-10 {
+  padding-bottom: 10px;
+}
+/* Typography */
+/**************************/
+#parallax-world-of-ugg h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: black;
+  padding: 0;
+  margin: 0;
+}
+#parallax-world-of-ugg h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 70px;
+  letter-spacing: 10px;
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  text-transform: uppercase;
+  z-index: 10;
+  opacity: 0.9;
+}
+#parallax-world-of-ugg h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  color: black;
+}
+.block p, .block ol {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 40px;
+}
+.first-character {
+  font-weight: 400;
+  float: left;
+  font-size: 90px;
+  line-height: 60px;
+  padding-top: 9px;
+  padding-right: 2px;
+  padding-left: 2px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.sc {
+  color: #3b8595;
+}
+.ny {
+  color: #3d3c3a;
+}
+.atw {
+  color: #c48660;
+}
+.cyan {
+  color: #0F9E97;
+}
+/* Section - Title */
+/**************************/
+#parallax-world-of-ugg .title {
+  background: white;
+  padding: 100px;
+  margin: 0 auto;
+  text-align: center;
+}
+#parallax-world-of-ugg .title h1 {
+  font-size: 45px;
+  letter-spacing: 8px;
+}
+/* Section - Block */
+/**************************/
+#parallax-world-of-ugg .block {
+  background: white;
+  padding: 40px;
+  width: 820px;
+  margin: 0 auto;
+  text-align: justify;
+}
+#parallax-world-of-ugg .block-gray {
+  background: #f2f2f2;
+  padding: 60px;
+}
+#parallax-world-of-ugg .section-overlay-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.7;
+}
+/* Section - Parallax */
+/**************************/
+.parallax {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+/* Extras */
+/**************************/
+#parallax-world-of-ugg .line-break {
+  border-bottom: 1px solid black;
+  width: 150px;
+  margin: 0 auto;
+}
+.contenedor-video {
+  display: flex;
+  justify-content: center;
+}
+.video-largo {
+  width: 70%;
+  height: 30rem;
+  margin: 2rem;
+}
+.video-alto {
+  width: 20rem;
+  height: 35rem;
+  margin: 2rem;
+}
+/* Media Queries */
+/**************************/
+@media screen and (max-width: 959px) and (min-width: 768px) {
+  #parallax-world-of-ugg .block {
+    padding: 30px;
+    width: 620px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #parallax-world-of-ugg .block {
+    padding: 20px;
+    width: 420px;
+  }
+  #parallax-world-of-ugg h2 {
+    font-size: 30px;
+  }
+  #parallax-world-of-ugg .parallax-one, #parallax-world-of-ugg .parallax-two, #parallax-world-of-ugg .parallax-three, #parallax-world-of-ugg .parallax-four, #parallax-world-of-ugg .parallax-five {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (max-width: 479px) {
+  #parallax-world-of-ugg .block {
+    padding: 15px 15px;
+    width: 290px;
+  }
+}
+/*targetas*/
+.hero-section {
+  align-items: flex-start;
+  background-color: #f2f2f2;
+  display: flex;
+  min-height: 100%;
+  justify-content: center;
+  padding: 36px 24px;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  max-width: 1200px;
+  width: 100%;
+}
+@media(min-width: 640px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  list-style: none;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-height: 700px;
+}
+.card:before {
+  content: '';
+  display: block;
+  padding-bottom: 150%;
+  width: 100%;
+}
+.card__background {
+  background-size: cover;
+  background-position: center;
+  border-radius: 24px;
+  bottom: 0;
+  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform-origin: center;
+  transform: scale(1) translateZ(0);
+  transition: filter 200ms linear, transform 200ms linear;
+}
+.card:hover .card__background {
+  transform: scale(1.05) translateZ(0);
+}
+.card-grid:hover > .card:not(:hover) {
+  opacity: 0.5;
+}
+.card-grid:hover > .card:not(:hover) .card__background {
+  filter: brightness(0.75) saturate(1.2) contrast(0.85) blur(8px);
+}
+.card__content {
+  left: 0;
+  padding: 24px;
+  position: absolute;
+  top: 0;
+  height: 80%;
+  overflow: auto;
+}
+.card__category {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.card__heading {
+  text-transform: uppercase;
+  font-family: "Source Sans Pro", sans-serif;
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 1rem;
+  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+  line-height: 2em;
+  word-spacing: 0.5vw;
+}
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.additional-text {
+  display: none;
+  text-transform: uppercase;
+  font-family: "Source Sans Pro", sans-serif;
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 0.9em;
+  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+  line-height: 2em;
+  word-spacing: 0.5vw;
+}
+.card:hover .additional-text {
+  display: block;
+}
+.card:hover .card__heading {
+  display: none;
+}
+.card__image {
+  width: 100%;
+  height: auto;
+  margin-top: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.card__button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 16px;
+  background-color: #808080;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: "Source Sans Pro", sans-serif;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.card__button:hover {
+  background-color: #777777;
+}
+.card__price {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-family: "Source Sans Pro", sans-serif;
+  text-transform: uppercase;
+}
+/*nav*/
+@supports(animation-timeline: view()) {
+  @keyframes fade-out {
+    to {
+      background-size: 150%;
+      opacity: 0;
+    }
+  }
+  @keyframes zoom-out {
+    to {
+      font-size: 2rem;
+      padding-left: .1em;
+    }
+  }
+  @keyframes appear {
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes max-out {
+    to {
+      max-width: 100%;
+    }
+  }
+  nav {
+    animation: max-out linear both;
+    animation-timeline: view();
+    animation-range-start: 80vh;
+    animation-range-end: 100vh;
+  }
+  nav:after {
+    animation: appear linear both;
+    animation-timeline: view();
+    animation-range-start: 60vh;
+    animation-range-end: 100vh;
+  }
+  .logo {
+    animation: zoom-out linear both;
+    animation-timeline: view();
+    animation-range-start: 10vh;
+    animation-range-end: 100vh;
+  }
+}
+@supports(not(animation-timeline: view())) {
+  .notice:after {
+    content: ' animation-timeline of scroll and view are currently not supported in your browser.';
+  }
+}
+nav, main {
+  max-width: 75ch;
+  margin: 0 auto;
+  padding-inline: 1em;
+}
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 3rem;
+  backdrop-filter: blur(.2em);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  z-index: 1000;
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.menu {
+  display: flex;
+  padding-right: 1em;
+  margin: 0;
+  gap: 1rem;
+}
+.menu li {
+  list-style: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: .5s linear;
+  position: relative;
+}
+.menu li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Oswald";
+  font-size: 18px;
+}
+.menu li a:hover {
+  text-decoration: underline black;
+}
+.menu li .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  min-width: 10rem;
+  left: 0; /* Alinea el contenido a la izquierda */
+  right: auto; /* Alinea el contenido a la izquierda */
+  max-width: 90vw; /* Limita el ancho al 90% del viewport */
+  max-height: 80vh; /* Limita la altura al 80% del viewport */
+  overflow-y: auto; /* Habilita el scroll vertical si es necesario */
+  overflow-x: hidden; /* Desactiva el scroll horizontal */
+}
+.menu li .dropdown-content.show {
+  display: block;
+}
+.menu li .dropdown-content li {
+  display: block;
+  padding: 0.5rem 1rem;
+}
+.menu li .dropdown-content li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+.menu li .dropdown-content li a:hover {
+  background-color: #f1f1f1;
+}
+.menu li:hover .dropdown-content {
+  display: block;
+}
+nav:after {
+  content: '';
+  position: absolute;
+  opacity: 0;
+  height: .05em;
+  width: 100%;
+  bottom: 0;
+}
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end; /* Alinea los elementos del menú a la derecha */
+    width: 100%;
+    position: absolute; /* Posiciona el menú de forma absoluta */
+    top: 100%; /* Posiciona el menú debajo de la barra de navegación */
+    right: 0; /* Alinea el menú al lado derecho */
+    background-color: white; /* Fondo blanco para el menú desplegable */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Sombra para el menú desplegable */
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .menu.show {
+    display: flex;
+  }
+  .menu li {
+    display: block;
+  }
+  .menu li .dropdown-content {
+    left: auto; /* Anula la alineación a la izquierda */
+    right: 0; /* Alinea el contenido a la derecha */
+    min-width: 10rem;
+  }
+}
+.logo img {
+  width: 200px;
+  height: auto;
+  transition: width 1s, height 1s;
+}
+.nav-scrolled .logo img {
+  width: 50px;
+  height: 50px;
+}
+/*contactanos*/
+footer {
+  font-family: "Oswald";
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column; /* Cambia la dirección de los divs a columna inicialmente */
+  align-items: center;
+}
+footer .contact-info, footer .social-media {
+  max-width: 75ch;
+  margin: 0 auto;
+  padding: 0 1em;
+  flex: 1; /* Para que los divs ocupen el mismo espacio */
+}
+#Contactanos footer .contact-info h3, #Contactanos footer .social-media h3 {
+  font-family: "Oswald";
+  font-size: 25px;
+  margin: 1rem 0 3rem;
+}
+#Contactanos footer .contact-info p, #Contactanos footer .social-media a {
+  font-family: "Oswald";
+  font-size: 18px;
+  margin: 0.6em 0;
+}
+#Contactanos footer .social-media .social-links {
+  display: flex;
+  justify-content: center; /* Centra los enlaces de redes sociales */
+  gap: 1em; /* Añade espacio entre los enlaces */
+}
+#Contactanos footer .social-media a {
+  text-decoration: none;
+  color: inherit; /* Para heredar el color del texto */
+}
+/* Media query para pantallas más grandes */
+@media (min-width: 768px) {
+  footer {
+    flex-direction: row; /* Cambia la dirección de los divs a fila en pantallas grandes */
+    justify-content: space-around; /* Para distribuir el espacio entre los divs */
+  }
+}
+/*geositios*/
+.geo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.geo .item {
+  flex: 1 1 calc(25% - 20px);
+  margin: 10px;
+  text-align: center;
+  position: relative;
+}
+.geo .button {
+  display: block;
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+.geo .hover-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 1.5em;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.geo .button:hover .hover-text {
+  opacity: 1;
+}
+.geo .button:hover {
+  opacity: 1;
+}
+.geo p {
+  margin: 10px 0 0;
+  padding: 0;
+  font-size: 1.1em;
+  font-family: "Source Sans Pro", sans-serif;
+}
+@media (max-width: 1024px) {
+  .geo .item {
+    flex: 1 1 calc(33.33% - 20px);
+  }
+}
+@media (max-width: 768px) {
+  .geo .item {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+@media (max-width: 480px) {
+  .geo .item {
+    flex: 1 1 calc(100% - 20px);
+  }
+}
+/*Imagenes*/
+.img-plaza {
+  background-image: url('assets/img/Plaza.jpg');
+}
+.img-catedral {
+  background-image: url('assets/img/Catedral.jpg');
+}
+.img-museo {
+  background-image: url('assets/img/Museo.jpg');
+}
+.img-hotel {
+  background-image: url('assets/img/Hotel.jpg');
+}
+.img-calle {
+  background-image: url('assets/img/Calle.jpg');
+}
+.img-cementerio {
+  background-image: url('assets/img/Cementerio.jpg');
+}
+.img-cafe {
+  background-image: url('assets/img/Cafe.jpg');
+}
+.img-laguna {
+  background-image: url('assets/img/Laguna.jpg');
+}
+.img-bienvenidos {
+  background-image: url("assets/img/Bienvenidos.jpg");
+}
+.img-somos {
+  background-image: url("assets/img/Somos.jpg");
+}
+.img-historia {
+  background-image: url("assets/img/Historia.jpg");
+}
+.img-fest {
+  background-image: url('assets/img/Festividades.jpg');
+}
+.img-musica {
+  background-image: url("assets/img/Musica.jpg");
+}
+.img-pack {
+  background-image: url("assets/img/Paquetes.jpg");
+}
+.img-mitos {
+  background-image: url("assets/img/Mitos.jpg");
+}
+.img-geositios {
+  background-image: url("assets/img/Geositios.jpg");
+}
+.img-gastro {
+  background-image: url("assets/img/Gastronomia.jpg")
+}
